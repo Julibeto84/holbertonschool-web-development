@@ -5,4 +5,4 @@
 
 #### [0x00-html_advanced](./0x00-html_advanced)
 
-- Directory to learn HTML in depth.
+- Directory to learn HTML in detail.
