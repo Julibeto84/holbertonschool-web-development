@@ -1,0 +1,1 @@
+This directory has been created to deepen the learning of HTML. Its focus is on progressively learning all the tags that are used to develop the content of a web page, with the goal of building the complete structure of a website. It is important to note that the resulting website will not have any additional styling or functionality.
