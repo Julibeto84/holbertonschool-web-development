@@ -1,4 +1,5 @@
-# Holberton School Web Front End
+# Holberton School Web development
+
 
 ### Repository created for the Web Stack Specialization program at Holberton School, with emphasis on Frontend development. 
 
