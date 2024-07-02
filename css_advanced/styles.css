@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del Encabezado */
+header {
+    background-color: #fff;
+    /* Color de fondo del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /* Espaciado interno del header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra del header */
+}
+
+header a img {
+    height: 50px;
+    /* Altura del logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos del menú */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Color del texto del menú */
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Estilo de la Primera Sección (Banner) */
+header section {
+    background-image: url('banner-bg.jpg');
+    /* Imagen de fondo del banner */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Color del texto en el banner */
+    padding: 100px 50px;
+    /* Espaciado interno del banner */
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header section h1 {
+    font-size: 48px;
+    /* Tamaño de fuente del título */
+    margin-bottom: 20px;
+    /* Espaciado inferior del título */
+}
+
+header section p {
+    font-size: 18px;
+    /* Tamaño de fuente del párrafo */
+    margin-bottom: 30px;
+    /* Espaciado inferior del párrafo */
+}
+
+header section button {
+    background-color: #ff6600;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Bordes redondeados del botón */
+}
+
+header section button:hover {
+    background-color: #e55d00;
+    /* Color de fondo del botón en hover */
+}
+
+header section article {
+    margin-bottom: 50px;
+    /* Espaciado inferior entre los artículos */
+}
+
+header section article h2 {
+    font-size: 36px;
+    /* Tamaño de fuente del título del artículo */
+    margin-bottom: 20px;
+    /* Espaciado inferior del título */
+}
+
+header section article div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header section article div article {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header section article div article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Hacer las imágenes redondas */
+    object-fit: cover;
+    /* Ajustar la imagen dentro del contenedor */
+    margin-bottom: 10px;
+}
+
+header section article div article h3 {
+    font-size: 24px;
+    /* Tamaño de fuente del subtítulo */
+    margin-bottom: 10px;
+    /* Espaciado inferior del subtítulo */
+}
+
+header section article div article p {
+    font-size: 16px;
+    /* Tamaño de fuente del texto */
+}
