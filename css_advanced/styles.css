@@ -17,71 +17,76 @@ a {
     color: inherit;
 }
 
-/* Header styling */
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #ffffff;
-    position: relative;
+/* Header styling with background image */
+.hero-section {
+    background-image: url('css_advanced/images/Bitmap.svg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px; /* Ajusta el padding según el Figma */
 }
 
-header a img {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .logo {
     width: 120px; /* Ajusta el tamaño según el Figma */
 }
 
-nav ul {
+.nav-list {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
+.nav-list li {
     margin: 0 20px;
 }
 
-nav ul li a {
+.nav-list li a {
     text-decoration: none;
-    color: #ffffff; /* Ajusta el color según el Figma */
+    color: #fff; /* Ajusta el color según el Figma */
     font-size: 18px; /* Ajusta el tamaño de la fuente según el Figma */
     font-weight: bold; /* Ajusta el peso de la fuente según el Figma */
 }
 
-nav ul li a:hover {
+.nav-list li a:hover {
     color: #007BFF; /* Ajusta el color del hover según el Figma */
 }
 
 /* First section styling */
-header section {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Ajusta las columnas */
-    gap: 50px;
-    position: absolute; /* Posiciona la sección del banner en relación al encabezado */
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #ffffff; /* Ajusta el color de fondo según el Figma */
-    padding: 50px 0; /* Ajusta el padding según el Figma */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-header section article {
+.banner-main {
     padding: 20px;
 }
 
-header section article h1 {
+.banner-main h1 {
     font-size: 56px; /* Ajusta el tamaño de la fuente según el Figma */
-    color: #333; /* Ajusta el color según el Figma */
+    color: #fff; /* Ajusta el color según el Figma */
     font-weight: bold; /* Ajusta el peso de la fuente según el Figma */
     margin-bottom: 20px;
 }
 
-header section article p {
+.banner-main p {
     font-size: 24px; /* Ajusta el tamaño de la fuente según el Figma */
-    color: #666; /* Ajusta el color según el Figma */
+    color: #fff; /* Ajusta el color según el Figma */
     margin-bottom: 30px;
 }
 
-header section article button {
+.banner-main button {
     padding: 15px 30px;
     background-color: #007BFF; /* Ajusta el color según el Figma */
     color: #fff;
@@ -91,109 +96,52 @@ header section article button {
     cursor: pointer;
 }
 
-header section article button:hover {
+.banner-main button:hover {
     background-color: #0056b3; /* Ajusta el color del hover según el Figma */
 }
 
-header section article:nth-child(2) {
+.banner-secondary {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-header section article:nth-child(2) > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-header section article:nth-child(2) article {
-    flex: 0 1 48%;
-    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-header section article:nth-child(2) article img {
+.banner-secondary h2 {
+    font-size: 36px; /* Ajusta el tamaño de la fuente según el Figma */
+    color: #fff; /* Ajusta el color según el Figma */
+    margin-bottom: 20px;
+}
+
+.pros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pros article {
+    flex: 0 1 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.pros article img {
     width: 80px; /* Ajusta el tamaño según el Figma */
     height: 80px; /* Ajusta el tamaño según el Figma */
     border-radius: 50%; /* Ajusta el radio del borde según el Figma */
-    margin-bottom: 10px;
 }
 
-header section article:nth-child(2) article h3 {
+.pros article h3 {
     font-size: 20px; /* Ajusta el tamaño de la fuente según el Figma */
-    color: #333; /* Ajusta el color según el Figma */
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
 }
 
-header section article:nth-child(2) article p {
+.pros article p {
     font-size: 16px; /* Ajusta el tamaño de la fuente según el Figma */
-    color: #666; /* Ajusta el color según el Figma */
 }
 
-/* Quote Section Styling */
-main section.quote {
-    padding: 60px 0; /* Ajusta el padding según el Figma */
-    background-color: #f8f8f8; /* Ajusta el color de fondo según el Figma */
-    text-align: center;
-}
-
-main section.quote article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Para móvil */
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-main section.quote article img {
-    width: 120px; /* Ajusta el tamaño según el Figma */
-    height: 120px; /* Ajusta el tamaño según el Figma */
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-main section.quote article div {
-    text-align: left;
-}
-
-main section.quote article blockquote {
-    font-size: 24px;
-    color: #333;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    quotes: "“" "”" "‘" "’";
-    font-style: italic; /* Ajusta el estilo según el Figma */
-}
-
-main section.quote article blockquote:before {
-    content: open-quote;
-}
-
-main section.quote article blockquote:after {
-    content: close-quote;
-}
-
-main section.quote article p {
-    font-size: 18px;
-    color: #666;
-}
-
-/* Button Styling (Centralized) */
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 
 
