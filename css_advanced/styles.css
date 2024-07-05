@@ -19,7 +19,7 @@ a {
 
 /* Header styling with background image */
 .hero-section {
-    background-image: url('css_advanced/images/Bitmap.svg'); /* Ruta a tu imagen de fondo */
+    background-image: url(./images/Bitmap.png); /* Asegúrate de que esta ruta sea correcta */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
