@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li, nav, section, article, div, footer, blockquote {
     margin: 0;
     padding: 0;
@@ -28,6 +27,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 50px; /* Ajusta el padding según el Figma */
+    filter: grayscale(100%); /* Aplica el filtro de escala de grises */
 }
 
 .header-content {
